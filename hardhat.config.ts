@@ -6,6 +6,7 @@ import "solidity-coverage";
 import "./tasks/accounts";
 import "./tasks/mint";
 import "./tasks/deploy";
+import "./tasks/scripts";
 
 import { resolve } from "path";
 
@@ -80,7 +81,7 @@ const config: HardhatUserConfig = {
     tests: "./test",
   },
   solidity: {
-    version: "0.8.0",
+    version: "0.8.4",
     settings: {
       metadata: {
         // Not including the metadata hash
