@@ -1,7 +1,7 @@
 
 // SPDX-License-Identifier: UNLICENSED
 
-pragma solidity 0.8.4;
+pragma solidity 0.8.6;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
@@ -89,7 +89,7 @@ contract KzarToken is Context, IERC20, IERC20Metadata, Ownable, Feeable {
     }
 
     /** Functions required by IERC20 **/
-    
+
     function name() public view virtual override returns (string memory) {
         return _name;
     }
@@ -242,7 +242,7 @@ contract KzarToken is Context, IERC20, IERC20Metadata, Ownable, Feeable {
         if ( sumOfFees > 0 ){
             _takeFees( amount );
         }
-        
+
         emit Transfer(sender, recipient, tTransferAmount);
     }
 

@@ -1,5 +1,5 @@
 //SPDX-License-Identifier: Unlicense
-pragma solidity 0.8.4;
+pragma solidity 0.8.6;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 //import "./ThalloShadowySuperCoderNFT.sol";
@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract ThalloHire is Ownable {
 
     string private blah;
-    string pu applyEmailAddress;
+    string applyEmailAddress;
     mapping(string => bool) public candidateIdWhitelist;
     bytes32 private someMoreData;
     address private nftAddress;

@@ -80,22 +80,7 @@ const config: HardhatUserConfig = {
     sources: "./contracts",
     tests: "./test",
   },
-  solidity: {
-    version: "0.8.4",
-    settings: {
-      metadata: {
-        // Not including the metadata hash
-        // https://github.com/paulrberg/solidity-template/issues/31
-        bytecodeHash: "none",
-      },
-      // Disable the optimizer when debugging
-      // https://hardhat.org/hardhat-network/#solidity-optimizer-support
-      optimizer: {
-        enabled: true,
-        runs: 800,
-      },
-    },
-  },
+  solidity: "0.8.6",
   typechain: {
     outDir: "types",
     target: "ethers-v5",
